@@ -50,7 +50,7 @@ $(function () {
     // })
 
     $.ajax({
-      url: 'http://ajax.frontend.itheima.net/api/reguser',
+      url: '/api/reguser',
       method: 'POST',
       data: {
         username: $('#form-reg [name=username]').val(),
@@ -73,7 +73,7 @@ $(function () {
     e.preventDefault();
     //发起Ajax的POST请求
     $.ajax({
-      url: 'http://ajax.frontend.itheima.net/api/login',
+      url: '/api/login',
       method: 'POST',
       data: $(this).serialize(),
       success: function (res) {
